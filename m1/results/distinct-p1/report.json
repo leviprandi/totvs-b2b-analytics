@@ -1,0 +1,1052 @@
+{
+  "candidates": [
+    {
+      "family": "kmeans",
+      "k": 2,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 2
+      },
+      "fit_seconds": 0.008690250018844381,
+      "iterations": 3,
+      "converged": true,
+      "silhouette": null,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 2998,
+          "reference_count": 1000,
+          "silhouette": null
+        },
+        {
+          "cluster": 1,
+          "train_count": 2,
+          "reference_count": 0,
+          "silhouette": null
+        }
+      ],
+      "inertia_train": 47281.20563445729,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster",
+        "nonpositive_or_undefined_silhouette"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.008791790984105319
+    },
+    {
+      "family": "kmeans",
+      "k": 3,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 3
+      },
+      "fit_seconds": 0.005076625006040558,
+      "iterations": 9,
+      "converged": true,
+      "silhouette": 0.5759572809176009,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 2640,
+          "reference_count": 877,
+          "silhouette": 0.6371932377023597
+        },
+        {
+          "cluster": 1,
+          "train_count": 2,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 2,
+          "train_count": 358,
+          "reference_count": 123,
+          "silhouette": 0.13933993050919932
+        }
+      ],
+      "inertia_train": 29743.143680067922,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.013536459009628743
+    },
+    {
+      "family": "kmeans",
+      "k": 4,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 4
+      },
+      "fit_seconds": 0.00913741602562368,
+      "iterations": 5,
+      "converged": true,
+      "silhouette": 0.26973088222830427,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 2094,
+          "reference_count": 691,
+          "silhouette": 0.27337039430054116
+        },
+        {
+          "cluster": 1,
+          "train_count": 2,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 2,
+          "train_count": 282,
+          "reference_count": 97,
+          "silhouette": 0.1001711693088677
+        },
+        {
+          "cluster": 3,
+          "train_count": 622,
+          "reference_count": 212,
+          "silhouette": 0.3354496997342934
+        }
+      ],
+      "inertia_train": 25363.267228480538,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.01540591599768959
+    },
+    {
+      "family": "kmeans",
+      "k": 5,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 5
+      },
+      "fit_seconds": 0.010612500016577542,
+      "iterations": 6,
+      "converged": true,
+      "silhouette": 0.28060028706236256,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 2095,
+          "reference_count": 690,
+          "silhouette": 0.27292937566207637
+        },
+        {
+          "cluster": 1,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 2,
+          "train_count": 283,
+          "reference_count": 98,
+          "silhouette": 0.20268249440441707
+        },
+        {
+          "cluster": 3,
+          "train_count": 2,
+          "reference_count": 2,
+          "silhouette": 0.9591033385150022
+        },
+        {
+          "cluster": 4,
+          "train_count": 619,
+          "reference_count": 210,
+          "silhouette": 0.3357044129850806
+        }
+      ],
+      "inertia_train": 21577.803477500718,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.01675958398845978
+    },
+    {
+      "family": "kmeans",
+      "k": 6,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 6
+      },
+      "fit_seconds": 0.014570290979463607,
+      "iterations": 29,
+      "converged": true,
+      "silhouette": 0.2943568325137851,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 433,
+          "reference_count": 162,
+          "silhouette": 0.1535688666198949
+        },
+        {
+          "cluster": 1,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 2,
+          "train_count": 129,
+          "reference_count": 45,
+          "silhouette": 0.17015581878202468
+        },
+        {
+          "cluster": 3,
+          "train_count": 551,
+          "reference_count": 193,
+          "silhouette": 0.2948245189736928
+        },
+        {
+          "cluster": 4,
+          "train_count": 2,
+          "reference_count": 2,
+          "silhouette": 0.9582522182093308
+        },
+        {
+          "cluster": 5,
+          "train_count": 1884,
+          "reference_count": 598,
+          "silhouette": 0.33947161819035054
+        }
+      ],
+      "inertia_train": 18318.11281548559,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.020143500005360693
+    },
+    {
+      "family": "kmeans",
+      "k": 7,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 7
+      },
+      "fit_seconds": 0.014843499986454844,
+      "iterations": 14,
+      "converged": true,
+      "silhouette": 0.3058094790415879,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 313,
+          "reference_count": 95,
+          "silhouette": 0.1289795129921792
+        },
+        {
+          "cluster": 1,
+          "train_count": 2,
+          "reference_count": 2,
+          "silhouette": 0.9575759124828396
+        },
+        {
+          "cluster": 2,
+          "train_count": 99,
+          "reference_count": 35,
+          "silhouette": 0.13125276831900695
+        },
+        {
+          "cluster": 3,
+          "train_count": 548,
+          "reference_count": 192,
+          "silhouette": 0.292824700690054
+        },
+        {
+          "cluster": 4,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 5,
+          "train_count": 1724,
+          "reference_count": 561,
+          "silhouette": 0.34694619956008044
+        },
+        {
+          "cluster": 6,
+          "train_count": 313,
+          "reference_count": 115,
+          "silhouette": 0.3146805748304736
+        }
+      ],
+      "inertia_train": 16037.656851889195,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.020656582986703143
+    },
+    {
+      "family": "kmeans",
+      "k": 8,
+      "seed": 11,
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "random_state": 11,
+        "n_clusters": 8
+      },
+      "fit_seconds": 0.01319879200309515,
+      "iterations": 25,
+      "converged": true,
+      "silhouette": 0.27288912220772205,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 512,
+          "reference_count": 185,
+          "silhouette": 0.2686626728956263
+        },
+        {
+          "cluster": 1,
+          "train_count": 317,
+          "reference_count": 123,
+          "silhouette": 0.2946877997883878
+        },
+        {
+          "cluster": 2,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 3,
+          "train_count": 107,
+          "reference_count": 40,
+          "silhouette": 0.1288268268308229
+        },
+        {
+          "cluster": 4,
+          "train_count": 497,
+          "reference_count": 146,
+          "silhouette": 0.2952881425737777
+        },
+        {
+          "cluster": 5,
+          "train_count": 2,
+          "reference_count": 2,
+          "silhouette": 0.9576616123468671
+        },
+        {
+          "cluster": 6,
+          "train_count": 1400,
+          "reference_count": 457,
+          "silhouette": 0.27935263951636596
+        },
+        {
+          "cluster": 7,
+          "train_count": 164,
+          "reference_count": 47,
+          "silhouette": 0.19351716968897914
+        }
+      ],
+      "inertia_train": 14404.485851428435,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.018356457992922515
+    },
+    {
+      "family": "gmm",
+      "k": 2,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 2
+      },
+      "fit_seconds": 0.03925816700211726,
+      "iterations": 17,
+      "converged": true,
+      "silhouette": 0.2881211595918321,
+      "min_reference_cluster": 319,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 2005,
+          "reference_count": 681,
+          "silhouette": 0.4802313870227065
+        },
+        {
+          "cluster": 1,
+          "train_count": 995,
+          "reference_count": 319,
+          "silhouette": -0.12199503125589663
+        }
+      ],
+      "aic_train": 55066.443242009045,
+      "bic_train": 55264.6533717415,
+      "mean_max_membership_reference": 0.9724902190631683,
+      "status": "eligible",
+      "reasons": [],
+      "warnings": [],
+      "elapsed_seconds": 0.046916124993003905
+    },
+    {
+      "family": "gmm",
+      "k": 3,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 3
+      },
+      "fit_seconds": 0.06125091700232588,
+      "iterations": 29,
+      "converged": true,
+      "silhouette": 0.09282788905640227,
+      "min_reference_cluster": 52,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 1351,
+          "reference_count": 450,
+          "silhouette": 0.3856569606589763
+        },
+        {
+          "cluster": 1,
+          "train_count": 129,
+          "reference_count": 52,
+          "silhouette": 0.03409101812146968
+        },
+        {
+          "cluster": 2,
+          "train_count": 1520,
+          "reference_count": 498,
+          "silhouette": -0.16564352647079014
+        }
+      ],
+      "aic_train": 13509.637120327981,
+      "bic_train": 13809.955498710493,
+      "mean_max_membership_reference": 0.994211951526477,
+      "status": "eligible",
+      "reasons": [],
+      "warnings": [],
+      "elapsed_seconds": 0.06804041701252572
+    },
+    {
+      "family": "gmm",
+      "k": 4,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 4
+      },
+      "fit_seconds": 0.0369823329965584,
+      "iterations": 12,
+      "converged": true,
+      "silhouette": 0.08636818481949221,
+      "min_reference_cluster": 31,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 1351,
+          "reference_count": 450,
+          "silhouette": 0.3498320179734388
+        },
+        {
+          "cluster": 1,
+          "train_count": 1059,
+          "reference_count": 346,
+          "silhouette": -0.1751253032520437
+        },
+        {
+          "cluster": 2,
+          "train_count": 82,
+          "reference_count": 31,
+          "silhouette": -0.056608142225004744
+        },
+        {
+          "cluster": 3,
+          "train_count": 508,
+          "reference_count": 173,
+          "silhouette": -0.050335352221809064
+        }
+      ],
+      "aic_train": 1357.325114815049,
+      "bic_train": 1759.7517418476154,
+      "mean_max_membership_reference": 0.9965469125575492,
+      "status": "eligible",
+      "reasons": [],
+      "warnings": [],
+      "elapsed_seconds": 0.04310887499013916
+    },
+    {
+      "family": "gmm",
+      "k": 5,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 5
+      },
+      "fit_seconds": 0.06307279199245386,
+      "iterations": 12,
+      "converged": true,
+      "silhouette": 0.08751195933761287,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 1349,
+          "reference_count": 450,
+          "silhouette": 0.34925940967811014
+        },
+        {
+          "cluster": 1,
+          "train_count": 90,
+          "reference_count": 33,
+          "silhouette": -0.03881192307519668
+        },
+        {
+          "cluster": 2,
+          "train_count": 1052,
+          "reference_count": 344,
+          "silhouette": -0.17343574886489208
+        },
+        {
+          "cluster": 3,
+          "train_count": 508,
+          "reference_count": 173,
+          "silhouette": -0.050358866742961535
+        },
+        {
+          "cluster": 4,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        }
+      ],
+      "aic_train": 1175.1003843145556,
+      "bic_train": 1679.6352599971763,
+      "mean_max_membership_reference": 0.9959589695183262,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.06919758400181308
+    },
+    {
+      "family": "gmm",
+      "k": 6,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 6
+      },
+      "fit_seconds": 0.06908233399735764,
+      "iterations": 18,
+      "converged": true,
+      "silhouette": -0.02053108486259648,
+      "min_reference_cluster": 19,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 308,
+          "reference_count": 87,
+          "silhouette": 0.03423405302546796
+        },
+        {
+          "cluster": 1,
+          "train_count": 533,
+          "reference_count": 177,
+          "silhouette": 0.1214237419118094
+        },
+        {
+          "cluster": 2,
+          "train_count": 821,
+          "reference_count": 266,
+          "silhouette": -0.08848771237422981
+        },
+        {
+          "cluster": 3,
+          "train_count": 43,
+          "reference_count": 19,
+          "silhouette": -0.08092426867359895
+        },
+        {
+          "cluster": 4,
+          "train_count": 534,
+          "reference_count": 192,
+          "silhouette": 0.12464995536946664
+        },
+        {
+          "cluster": 5,
+          "train_count": 761,
+          "reference_count": 259,
+          "silhouette": -0.16933956999535338
+        }
+      ],
+      "aic_train": -5482.281802549949,
+      "bic_train": -4875.638678217274,
+      "mean_max_membership_reference": 0.9749458209629507,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster",
+        "nonpositive_or_undefined_silhouette"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.07522783300373703
+    },
+    {
+      "family": "gmm",
+      "k": 7,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 7
+      },
+      "fit_seconds": 0.06013983298907988,
+      "iterations": 14,
+      "converged": true,
+      "silhouette": 0.0695930928893198,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 657,
+          "reference_count": 221,
+          "silhouette": -0.12602710183831423
+        },
+        {
+          "cluster": 1,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 2,
+          "train_count": 263,
+          "reference_count": 84,
+          "silhouette": 0.33407425469205854
+        },
+        {
+          "cluster": 3,
+          "train_count": 453,
+          "reference_count": 148,
+          "silhouette": -0.09076702868817835
+        },
+        {
+          "cluster": 4,
+          "train_count": 781,
+          "reference_count": 280,
+          "silhouette": 0.14579410729676248
+        },
+        {
+          "cluster": 5,
+          "train_count": 821,
+          "reference_count": 261,
+          "silhouette": 0.16734801946342348
+        },
+        {
+          "cluster": 6,
+          "train_count": 24,
+          "reference_count": 6,
+          "silhouette": -0.2806363126237171
+        }
+      ],
+      "aic_train": -11072.226529861258,
+      "bic_train": -10363.475156878529,
+      "mean_max_membership_reference": 0.9840692796239748,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.06605083399335854
+    },
+    {
+      "family": "gmm",
+      "k": 8,
+      "seed": 11,
+      "parameters": {
+        "covariance_type": "diag",
+        "n_init": 5,
+        "max_iter": 300,
+        "tol": 0.001,
+        "reg_covar": 1e-05,
+        "init_params": "kmeans",
+        "random_state": 11,
+        "n_components": 8
+      },
+      "fit_seconds": 0.09534200001507998,
+      "iterations": 40,
+      "converged": true,
+      "silhouette": 0.05750998563256753,
+      "min_reference_cluster": 0,
+      "clusters": [
+        {
+          "cluster": 0,
+          "train_count": 445,
+          "reference_count": 146,
+          "silhouette": -0.09028552991767669
+        },
+        {
+          "cluster": 1,
+          "train_count": 159,
+          "reference_count": 50,
+          "silhouette": 0.6648131684674158
+        },
+        {
+          "cluster": 2,
+          "train_count": 1,
+          "reference_count": 0,
+          "silhouette": null
+        },
+        {
+          "cluster": 3,
+          "train_count": 566,
+          "reference_count": 187,
+          "silhouette": -0.20684075671974214
+        },
+        {
+          "cluster": 4,
+          "train_count": 537,
+          "reference_count": 160,
+          "silhouette": -0.010649287399237869
+        },
+        {
+          "cluster": 5,
+          "train_count": 2,
+          "reference_count": 4,
+          "silhouette": 0.11404155211990928
+        },
+        {
+          "cluster": 6,
+          "train_count": 679,
+          "reference_count": 245,
+          "silhouette": 0.4605316049441834
+        },
+        {
+          "cluster": 7,
+          "train_count": 611,
+          "reference_count": 208,
+          "silhouette": -0.17044368919306338
+        }
+      ],
+      "aic_train": -11238.891871046346,
+      "bic_train": -10428.032249413562,
+      "mean_max_membership_reference": 0.9799007445424988,
+      "status": "rejected",
+      "reasons": [
+        "degenerate_cluster"
+      ],
+      "warnings": [],
+      "elapsed_seconds": 0.10084429199923761
+    }
+  ],
+  "finalists": [
+    {
+      "family": "gmm",
+      "k": 2,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.2881211595918321,
+      "min_reference_cluster": 319
+    },
+    {
+      "family": "gmm",
+      "k": 3,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.09282788905640227,
+      "min_reference_cluster": 52
+    },
+    {
+      "family": "gmm",
+      "k": 4,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.08636818481949221,
+      "min_reference_cluster": 31
+    }
+  ],
+  "provisional_ranking": [
+    {
+      "family": "gmm",
+      "k": 2,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.2881211595918321,
+      "min_reference_cluster": 319
+    },
+    {
+      "family": "gmm",
+      "k": 3,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.09282788905640227,
+      "min_reference_cluster": 52
+    },
+    {
+      "family": "gmm",
+      "k": 4,
+      "pairwise_ari": [
+        {
+          "seeds": [
+            11,
+            29
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            11,
+            47
+          ],
+          "ari": 1.0
+        },
+        {
+          "seeds": [
+            29,
+            47
+          ],
+          "ari": 1.0
+        }
+      ],
+      "status": "eligible",
+      "reason": "passed_all_seeds_and_ari",
+      "selection_silhouette": 0.08636818481949221,
+      "min_reference_cluster": 31
+    }
+  ],
+  "selected": {
+    "family": "gmm",
+    "k": 2,
+    "pairwise_ari": [
+      {
+        "seeds": [
+          11,
+          29
+        ],
+        "ari": 1.0
+      },
+      {
+        "seeds": [
+          11,
+          47
+        ],
+        "ari": 1.0
+      },
+      {
+        "seeds": [
+          29,
+          47
+        ],
+        "ari": 1.0
+      }
+    ],
+    "status": "eligible",
+    "reason": "passed_all_seeds_and_ari",
+    "selection_silhouette": 0.2881211595918321,
+    "min_reference_cluster": 319
+  },
+  "attempted_fits": 20,
+  "elapsed_seconds": 0.9436602919886354,
+  "halt_reason": null,
+  "total_seconds": 1.0771431250032037,
+  "peak_rss_bytes": 185466880
+}

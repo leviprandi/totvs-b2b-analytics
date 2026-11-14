@@ -1,0 +1,11 @@
+{
+  "opened_at": "2026-11-14T19:54:57.132461+00:00",
+  "run": "m2.2b/results/validation-v1-recovered",
+  "freeze_sha256": "840578f363b55fbd854f4a06c5ef22e26fed7e1e9c27d536bb0ceb3e619c32d5",
+  "public_derivative": {
+    "source_path": "m2.2b/results/validation-v1-recovered/test_opened.json",
+    "source_sha256": "3d1f7b52bb2914fc6e2813b5141b5fa5fb9d54fa2252aa8f963389f8c7a21872",
+    "changed_field": "run",
+    "change": "Absolute local path replaced with a repository-relative path"
+  }
+}

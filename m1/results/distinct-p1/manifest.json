@@ -1,0 +1,239 @@
+{
+  "status": "complete",
+  "dataset_id": "0a53363651d0deea01ff0452edead719b715e0814fd364910e52372a15f14063",
+  "data_cutoff": "2026-09-30",
+  "input_manifest": {
+    "generator": "TOTVS 2.0 original synthetic B2B demonstration",
+    "generator_version": "0.1.0",
+    "scenario": "distinct",
+    "n_clients": 5000,
+    "seed": 2027,
+    "chunk_size": 10000,
+    "cutoff": "2026-09-30",
+    "forward_window_end": "2026-12-31",
+    "disclaimer": "Fictitious records; not sampled, calibrated, inferred, or derived from TOTVS proprietary data. Not representative of real companies.",
+    "files": {
+      "clientes.csv.gz": {
+        "rows": 5000,
+        "sha256": "263fbf30fe685da27a336c58f738f38be7e0ec66cc7bb711659bbff9dcbf2d73",
+        "bytes": 33713
+      },
+      "contratos.csv.gz": {
+        "rows": 12771,
+        "sha256": "d973cecb8de018d7e2e869639978e21cb298420bec3cb98956343e38ee0b2330",
+        "bytes": 151735
+      },
+      "nps.csv.gz": {
+        "rows": 3582,
+        "sha256": "1d4bceae71ce334712a6935722f24d0c772ea000bf6eb0022513c1bbf095e87a",
+        "bytes": 26654
+      },
+      "telemetria.csv.gz": {
+        "rows": 8124,
+        "sha256": "b3977cf975eb1f187188286c66dec96865f43fd4aeb87f09b6697403b503438f",
+        "bytes": 26914
+      },
+      "futuro_reservado.csv.gz": {
+        "rows": 5000,
+        "sha256": "a8f8e5c0246e99a595bf457dd533b40156a14be8976449eecb8ac2ed3fceac50",
+        "bytes": 16556
+      },
+      "verdade_simulada_reservada.csv.gz": {
+        "rows": 5000,
+        "sha256": "12a37e1a5ebce082c7495a1465e6d81ae948ac2718ee52c74e899a7e83b00373",
+        "bytes": 12639
+      }
+    }
+  },
+  "source_manifest_sha256": "30031e4ee4084e1b9325a85c2d490841a3bf4d60fbeb9700dddcdefa0d3539d4",
+  "code_sha256": {
+    "snapshot.py": "50fc6eb8739ae0a1d95c2cdbd4473fd3285e0c1b87f42197ede77b00971795b2",
+    "experiment.py": "f4ef3cb1ab9f65cdb30f37ec42c629b561a0c0f892cd36124b3638f88a5084fe"
+  },
+  "split_seed": 101,
+  "model_seeds": [
+    11,
+    29,
+    47
+  ],
+  "candidates": [
+    [
+      "kmeans",
+      2
+    ],
+    [
+      "kmeans",
+      3
+    ],
+    [
+      "kmeans",
+      4
+    ],
+    [
+      "kmeans",
+      5
+    ],
+    [
+      "kmeans",
+      6
+    ],
+    [
+      "kmeans",
+      7
+    ],
+    [
+      "kmeans",
+      8
+    ],
+    [
+      "gmm",
+      2
+    ],
+    [
+      "gmm",
+      3
+    ],
+    [
+      "gmm",
+      4
+    ],
+    [
+      "gmm",
+      5
+    ],
+    [
+      "gmm",
+      6
+    ],
+    [
+      "gmm",
+      7
+    ],
+    [
+      "gmm",
+      8
+    ]
+  ],
+  "model_parameters": {
+    "kmeans": {
+      "init": "k-means++",
+      "n_init": 10,
+      "max_iter": 300,
+      "tol": 0.0001
+    },
+    "gmm": {
+      "covariance_type": "diag",
+      "n_init": 5,
+      "max_iter": 300,
+      "tol": 0.001,
+      "reg_covar": 1e-05,
+      "init_params": "kmeans"
+    }
+  },
+  "population": {
+    "train": 3000,
+    "reference": 1000,
+    "reserved_test": 1000
+  },
+  "reference_keys_sha256": "100d1c51aecef8c1e481070379f08970e0c0ce6204fd4bdb7271be9aa53ad474",
+  "evaluation_space": "P1 Euclidean, full fixed reference for silhouette and ARI",
+  "fit_space": "P1 train, inertia and GMM AIC/BIC reported on train",
+  "P1": {
+    "features_in": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "proporcao_gratuito",
+      "nps_medio",
+      "telemetria_observada",
+      "qtd_eventos_uso"
+    ],
+    "features_out": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "proporcao_gratuito",
+      "nps_medio",
+      "qtd_eventos_uso",
+      "telemetria_observada"
+    ],
+    "imputer_medians": {
+      "valor_mensal_total": 314.445,
+      "qtd_contratos": 2.0,
+      "qtd_produtos": 2.0,
+      "dias_relacionamento": 1488.5,
+      "proporcao_gratuito": 0.0,
+      "nps_medio": 6.0,
+      "qtd_eventos_uso": 11.0
+    },
+    "scaler_center": {
+      "valor_mensal_total": 314.445,
+      "qtd_contratos": 2.0,
+      "qtd_produtos": 2.0,
+      "dias_relacionamento": 1488.5,
+      "proporcao_gratuito": 0.0,
+      "nps_medio": 6.0,
+      "qtd_eventos_uso": 11.0
+    },
+    "scaler_scale": {
+      "valor_mensal_total": 793.5375,
+      "qtd_contratos": 2.0,
+      "qtd_produtos": 2.0,
+      "dias_relacionamento": 1389.0,
+      "proporcao_gratuito": 0.3333333333333333,
+      "nps_medio": 2.0,
+      "qtd_eventos_uso": 2.0
+    },
+    "binary_passthrough": "telemetria_observada"
+  },
+  "fit_budget": 20,
+  "budget_seconds": 600,
+  "numerical_threads": 2,
+  "minimum_reference_cluster": 30,
+  "silhouette_band": 0.02,
+  "minimum_pairwise_ari": 0.75,
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "numpy": "2.3.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.3",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "completed_fits": [
+    "kmeans-2-seed-11",
+    "kmeans-3-seed-11",
+    "kmeans-4-seed-11",
+    "kmeans-5-seed-11",
+    "kmeans-6-seed-11",
+    "kmeans-7-seed-11",
+    "kmeans-8-seed-11",
+    "gmm-2-seed-11",
+    "gmm-3-seed-11",
+    "gmm-4-seed-11",
+    "gmm-5-seed-11",
+    "gmm-6-seed-11",
+    "gmm-7-seed-11",
+    "gmm-8-seed-11",
+    "gmm-2-seed-29",
+    "gmm-2-seed-47",
+    "gmm-3-seed-29",
+    "gmm-3-seed-47",
+    "gmm-4-seed-29",
+    "gmm-4-seed-47"
+  ],
+  "halt_reason": null,
+  "search_seconds": 0.9436602919886354
+}

@@ -1,0 +1,308 @@
+{
+  "status": "complete",
+  "dataset_id": "0a53363651d0deea01ff0452edead719b715e0814fd364910e52372a15f14063",
+  "source_manifest": {
+    "generator": "TOTVS 2.0 original synthetic B2B demonstration",
+    "generator_version": "0.1.0",
+    "scenario": "distinct",
+    "n_clients": 5000,
+    "seed": 2027,
+    "chunk_size": 10000,
+    "cutoff": "2026-09-30",
+    "forward_window_end": "2026-12-31",
+    "disclaimer": "Fictitious records; not sampled, calibrated, inferred, or derived from TOTVS proprietary data. Not representative of real companies.",
+    "files": {
+      "clientes.csv.gz": {
+        "rows": 5000,
+        "sha256": "263fbf30fe685da27a336c58f738f38be7e0ec66cc7bb711659bbff9dcbf2d73",
+        "bytes": 33713
+      },
+      "contratos.csv.gz": {
+        "rows": 12771,
+        "sha256": "d973cecb8de018d7e2e869639978e21cb298420bec3cb98956343e38ee0b2330",
+        "bytes": 151735
+      },
+      "nps.csv.gz": {
+        "rows": 3582,
+        "sha256": "1d4bceae71ce334712a6935722f24d0c772ea000bf6eb0022513c1bbf095e87a",
+        "bytes": 26654
+      },
+      "telemetria.csv.gz": {
+        "rows": 8124,
+        "sha256": "b3977cf975eb1f187188286c66dec96865f43fd4aeb87f09b6697403b503438f",
+        "bytes": 26914
+      },
+      "futuro_reservado.csv.gz": {
+        "rows": 5000,
+        "sha256": "a8f8e5c0246e99a595bf457dd533b40156a14be8976449eecb8ac2ed3fceac50",
+        "bytes": 16556
+      },
+      "verdade_simulada_reservada.csv.gz": {
+        "rows": 5000,
+        "sha256": "12a37e1a5ebce082c7495a1465e6d81ae948ac2718ee52c74e899a7e83b00373",
+        "bytes": 12639
+      }
+    }
+  },
+  "source_manifest_sha256": "30031e4ee4084e1b9325a85c2d490841a3bf4d60fbeb9700dddcdefa0d3539d4",
+  "split_seed": 101,
+  "train_keys_sha256": "3d7c1937e03590266e0d12a195d59f6ce0850a39871256552016c2313071df17",
+  "reference_keys_sha256": "100d1c51aecef8c1e481070379f08970e0c0ce6204fd4bdb7271be9aa53ad474",
+  "population": {
+    "train": 3000,
+    "reference": 1000,
+    "reserved": 1000
+  },
+  "features": [
+    "valor_mensal_total",
+    "qtd_contratos",
+    "qtd_produtos",
+    "dias_relacionamento",
+    "proporcao_gratuito",
+    "nps_medio",
+    "telemetria_observada",
+    "qtd_eventos_uso"
+  ],
+  "representation_order": [
+    "P1",
+    "P2",
+    "P1_clip"
+  ],
+  "screen_seed": 11,
+  "subsample_seeds": [
+    1011,
+    1012,
+    1013,
+    1014,
+    1015
+  ],
+  "init_seeds": [
+    11,
+    29
+  ],
+  "subsample_fraction": 0.8,
+  "with_replacement": false,
+  "configurations": [
+    [
+      "kmeans",
+      2
+    ],
+    [
+      "kmeans",
+      3
+    ],
+    [
+      "kmeans",
+      4
+    ],
+    [
+      "kmeans",
+      5
+    ],
+    [
+      "kmeans",
+      6
+    ],
+    [
+      "kmeans",
+      7
+    ],
+    [
+      "kmeans",
+      8
+    ],
+    [
+      "gmm",
+      2
+    ],
+    [
+      "gmm",
+      3
+    ],
+    [
+      "gmm",
+      4
+    ],
+    [
+      "gmm",
+      5
+    ],
+    [
+      "gmm",
+      6
+    ],
+    [
+      "gmm",
+      7
+    ],
+    [
+      "gmm",
+      8
+    ]
+  ],
+  "model_parameters": {
+    "kmeans": {
+      "init": "k-means++",
+      "n_init": 10,
+      "max_iter": 300,
+      "tol": 0.0001
+    },
+    "gmm": {
+      "covariance_type": "diag",
+      "n_init": 5,
+      "max_iter": 300,
+      "tol": 0.001,
+      "reg_covar": 1e-05,
+      "init_params": "kmeans"
+    }
+  },
+  "clip_quantiles": [
+    0.005,
+    0.995
+  ],
+  "evaluation": "Silhouette only within same fitted space; ARI on fixed reference keys",
+  "aic_bic": "Compare only GMMs in the same representation and same fitted training population",
+  "minimum_reference_cluster": 30,
+  "stability_gate": {
+    "eligible_runs": 9,
+    "ari_median": 0.75,
+    "ari_p10": 0.6,
+    "max_share_spread_pp": 10
+  },
+  "budget": {
+    "screen_fits": 42,
+    "resample_fits": 40,
+    "seconds": 600
+  },
+  "threads": 2,
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "numpy": "2.3.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.3",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "code_sha256": {
+    "sensitivity.py": "b5ab8f0098758de1d42c036029b7b56363799ae17ff71b58ef8918dbdbeec24a",
+    "experiment.py": "f4891e28d513a4a4764962cd89dcb2d77da2296b00b6abc79c4c05fcd2030fd0",
+    "snapshot.py": "50fc6eb8739ae0a1d95c2cdbd4473fd3285e0c1b87f42197ede77b00971795b2"
+  },
+  "completed_fits": [
+    "P1-kmeans-2-seed-11",
+    "P1-kmeans-3-seed-11",
+    "P1-kmeans-4-seed-11",
+    "P1-kmeans-5-seed-11",
+    "P1-kmeans-6-seed-11",
+    "P1-kmeans-7-seed-11",
+    "P1-kmeans-8-seed-11",
+    "P1-gmm-2-seed-11",
+    "P1-gmm-3-seed-11",
+    "P1-gmm-4-seed-11",
+    "P1-gmm-5-seed-11",
+    "P1-gmm-6-seed-11",
+    "P1-gmm-7-seed-11",
+    "P1-gmm-8-seed-11",
+    "P2-kmeans-2-seed-11",
+    "P2-kmeans-3-seed-11",
+    "P2-kmeans-4-seed-11",
+    "P2-kmeans-5-seed-11",
+    "P2-kmeans-6-seed-11",
+    "P2-kmeans-7-seed-11",
+    "P2-kmeans-8-seed-11",
+    "P2-gmm-2-seed-11",
+    "P2-gmm-3-seed-11",
+    "P2-gmm-4-seed-11",
+    "P2-gmm-5-seed-11",
+    "P2-gmm-6-seed-11",
+    "P2-gmm-7-seed-11",
+    "P2-gmm-8-seed-11",
+    "P1_clip-kmeans-2-seed-11",
+    "P1_clip-kmeans-3-seed-11",
+    "P1_clip-kmeans-4-seed-11",
+    "P1_clip-kmeans-5-seed-11",
+    "P1_clip-kmeans-6-seed-11",
+    "P1_clip-kmeans-7-seed-11",
+    "P1_clip-kmeans-8-seed-11",
+    "P1_clip-gmm-2-seed-11",
+    "P1_clip-gmm-3-seed-11",
+    "P1_clip-gmm-4-seed-11",
+    "P1_clip-gmm-5-seed-11",
+    "P1_clip-gmm-6-seed-11",
+    "P1_clip-gmm-7-seed-11",
+    "P1_clip-gmm-8-seed-11",
+    "P1-gmm-2-seed-11-sample-1011",
+    "P1-gmm-2-seed-29-sample-1011",
+    "P1-gmm-2-seed-11-sample-1012",
+    "P1-gmm-2-seed-29-sample-1012",
+    "P1-gmm-2-seed-11-sample-1013",
+    "P1-gmm-2-seed-29-sample-1013",
+    "P1-gmm-2-seed-11-sample-1014",
+    "P1-gmm-2-seed-29-sample-1014",
+    "P1-gmm-2-seed-11-sample-1015",
+    "P1-gmm-2-seed-29-sample-1015",
+    "P2-kmeans-2-seed-11-sample-1011",
+    "P2-kmeans-2-seed-29-sample-1011",
+    "P2-kmeans-2-seed-11-sample-1012",
+    "P2-kmeans-2-seed-29-sample-1012",
+    "P2-kmeans-2-seed-11-sample-1013",
+    "P2-kmeans-2-seed-29-sample-1013",
+    "P2-kmeans-2-seed-11-sample-1014",
+    "P2-kmeans-2-seed-29-sample-1014",
+    "P2-kmeans-2-seed-11-sample-1015",
+    "P2-kmeans-2-seed-29-sample-1015",
+    "P1_clip-kmeans-2-seed-11-sample-1011",
+    "P1_clip-kmeans-2-seed-29-sample-1011",
+    "P1_clip-kmeans-2-seed-11-sample-1012",
+    "P1_clip-kmeans-2-seed-29-sample-1012",
+    "P1_clip-kmeans-2-seed-11-sample-1013",
+    "P1_clip-kmeans-2-seed-29-sample-1013",
+    "P1_clip-kmeans-2-seed-11-sample-1014",
+    "P1_clip-kmeans-2-seed-29-sample-1014",
+    "P1_clip-kmeans-2-seed-11-sample-1015",
+    "P1_clip-kmeans-2-seed-29-sample-1015",
+    "P1-gmm-3-seed-11-sample-1011",
+    "P1-gmm-3-seed-29-sample-1011",
+    "P1-gmm-3-seed-11-sample-1012",
+    "P1-gmm-3-seed-29-sample-1012",
+    "P1-gmm-3-seed-11-sample-1013",
+    "P1-gmm-3-seed-29-sample-1013",
+    "P1-gmm-3-seed-11-sample-1014",
+    "P1-gmm-3-seed-29-sample-1014",
+    "P1-gmm-3-seed-11-sample-1015",
+    "P1-gmm-3-seed-29-sample-1015"
+  ],
+  "subsamples": {
+    "1011": {
+      "rows": 2400,
+      "keys_sha256": "919ba470245103c099ca3e66526435a57407b22098e4220c8be88c2566df90f1"
+    },
+    "1012": {
+      "rows": 2400,
+      "keys_sha256": "2b01e4b7154dd1e3c0e4bf256ed8ae20abcf789e2c24b0d51d8ebd66ef0d0e1c"
+    },
+    "1013": {
+      "rows": 2400,
+      "keys_sha256": "dbc6e3c684cc4466ff54a75739494f451ba32a4f466b12dc04ca36e2546ba64f"
+    },
+    "1014": {
+      "rows": 2400,
+      "keys_sha256": "ae454836f136744194223396b92684f353bf9de4cfd995d750dea604f67513e0"
+    },
+    "1015": {
+      "rows": 2400,
+      "keys_sha256": "4827625f9588f257279e2c3b7e5bd16c5025f31a91b0423aeab27fb02abf0c28"
+    }
+  },
+  "halt_reason": null
+}

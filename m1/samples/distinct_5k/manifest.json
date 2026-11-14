@@ -1,0 +1,43 @@
+{
+  "generator": "TOTVS 2.0 original synthetic B2B demonstration",
+  "generator_version": "0.1.0",
+  "scenario": "distinct",
+  "n_clients": 5000,
+  "seed": 2027,
+  "chunk_size": 10000,
+  "cutoff": "2026-09-30",
+  "forward_window_end": "2026-12-31",
+  "disclaimer": "Fictitious records; not sampled, calibrated, inferred, or derived from TOTVS proprietary data. Not representative of real companies.",
+  "files": {
+    "clientes.csv.gz": {
+      "rows": 5000,
+      "sha256": "263fbf30fe685da27a336c58f738f38be7e0ec66cc7bb711659bbff9dcbf2d73",
+      "bytes": 33713
+    },
+    "contratos.csv.gz": {
+      "rows": 12771,
+      "sha256": "d973cecb8de018d7e2e869639978e21cb298420bec3cb98956343e38ee0b2330",
+      "bytes": 151735
+    },
+    "nps.csv.gz": {
+      "rows": 3582,
+      "sha256": "1d4bceae71ce334712a6935722f24d0c772ea000bf6eb0022513c1bbf095e87a",
+      "bytes": 26654
+    },
+    "telemetria.csv.gz": {
+      "rows": 8124,
+      "sha256": "b3977cf975eb1f187188286c66dec96865f43fd4aeb87f09b6697403b503438f",
+      "bytes": 26914
+    },
+    "futuro_reservado.csv.gz": {
+      "rows": 5000,
+      "sha256": "a8f8e5c0246e99a595bf457dd533b40156a14be8976449eecb8ac2ed3fceac50",
+      "bytes": 16556
+    },
+    "verdade_simulada_reservada.csv.gz": {
+      "rows": 5000,
+      "sha256": "12a37e1a5ebce082c7495a1465e6d81ae948ac2718ee52c74e899a7e83b00373",
+      "bytes": 12639
+    }
+  }
+}

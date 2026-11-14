@@ -1,0 +1,1865 @@
+{
+  "keys_sha256": "2049906c997ca8a167c6507da18a2472408e65e70dd1c5cf4a9c9c752c7fea12",
+  "results": {
+    "renovou_90d": {
+      "events": 649,
+      "methods": {
+        "zero": {
+          "cramers_v": 0.033315494983299075,
+          "groups": [
+            {
+              "group": 0,
+              "n": 901,
+              "events": 580,
+              "rate": 0.6437291897891232,
+              "difference_pp": -5.324050718057382,
+              "risk_ratio": 0.9236114462191767,
+              "ci95_pp": [
+                -14.528722295092994,
+                4.434999271292261
+              ]
+            },
+            {
+              "group": 1,
+              "n": 99,
+              "events": 69,
+              "rate": 0.696969696969697,
+              "difference_pp": 5.324050718057382,
+              "risk_ratio": 1.0827063740856846,
+              "ci95_pp": [
+                -4.4215742328949865,
+                14.703359903137924
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.22761986277325907,
+            "gain": 0.00018202247819406396,
+            "adjusted_ci": [
+              -0.002222819302422096,
+              0.002419017311837496
+            ],
+            "passes": false
+          }
+        },
+        "low_use": {
+          "cramers_v": 0.010757244284043312,
+          "groups": [
+            {
+              "group": 0,
+              "n": 871,
+              "events": 567,
+              "rate": 0.6509758897818599,
+              "difference_pp": 1.531697505317775,
+              "risk_ratio": 1.0240962168519503,
+              "ci95_pp": [
+                -7.170097633478406,
+                10.261238530068779
+              ]
+            },
+            {
+              "group": 1,
+              "n": 129,
+              "events": 82,
+              "rate": 0.6356589147286822,
+              "difference_pp": -1.531697505317775,
+              "risk_ratio": 0.9764707490805682,
+              "ci95_pp": [
+                -10.664366005393424,
+                7.369925862636725
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.2277916577072882,
+            "gain": 1.0227544165034797e-05,
+            "adjusted_ci": [
+              -8.398676471024937e-05,
+              0.00011094914413175143
+            ],
+            "passes": false
+          }
+        },
+        "high_use": {
+          "cramers_v": 0.005662500598727302,
+          "groups": [
+            {
+              "group": 0,
+              "n": 921,
+              "events": 597,
+              "rate": 0.6482084690553745,
+              "difference_pp": -1.001937904589123,
+              "risk_ratio": 0.984778251064896,
+              "ci95_pp": [
+                -11.456108522657,
+                10.24663615497738
+              ]
+            },
+            {
+              "group": 1,
+              "n": 79,
+              "events": 52,
+              "rate": 0.6582278481012658,
+              "difference_pp": 1.001937904589123,
+              "risk_ratio": 1.0154570319954201,
+              "ci95_pp": [
+                -9.67024697975508,
+                11.420683351887732
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.22820876094937423,
+            "gain": -0.0004068756979210268,
+            "adjusted_ci": [
+              -0.002148408960916407,
+              0.0013122845053256604
+            ],
+            "passes": false
+          }
+        },
+        "coverage": {
+          "cramers_v": 0.004883352739212547,
+          "groups": [
+            {
+              "group": 0,
+              "n": 462,
+              "events": 301,
+              "rate": 0.6515151515151515,
+              "difference_pp": 0.467500281626676,
+              "risk_ratio": 1.0072274468826192,
+              "ci95_pp": [
+                -5.226186452952253,
+                6.197999645955029
+              ]
+            },
+            {
+              "group": 1,
+              "n": 538,
+              "events": 348,
+              "rate": 0.6468401486988847,
+              "difference_pp": -0.467500281626676,
+              "risk_ratio": 0.9928244142820092,
+              "ci95_pp": [
+                -6.375987704983989,
+                5.507028597177295
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.22786777888583448,
+            "gain": -6.589363438133478e-05,
+            "adjusted_ci": [
+              -0.0010629142121480334,
+              0.000904170063102302
+            ],
+            "passes": false
+          }
+        },
+        "value": {
+          "cramers_v": 0.08705255956418334,
+          "groups": [
+            {
+              "group": 0,
+              "n": 515,
+              "events": 355,
+              "rate": 0.6893203883495146,
+              "difference_pp": 8.313482133920536,
+              "risk_ratio": 1.1371441780595735,
+              "ci95_pp": [
+                2.5605044540086106,
+                14.342908617755977
+              ]
+            },
+            {
+              "group": 1,
+              "n": 485,
+              "events": 294,
+              "rate": 0.6061855670103092,
+              "difference_pp": -8.313482133920536,
+              "risk_ratio": 0.8793959634093218,
+              "ci95_pp": [
+                -14.47793013712341,
+                -2.3669302372135035
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.22608348700694375,
+            "gain": 0.0017183982445094044,
+            "adjusted_ci": [
+              -0.0018093436868928763,
+              0.005473233601869656
+            ],
+            "passes": false
+          }
+        },
+        "value_coverage": {
+          "cramers_v": 0.10326277459828202,
+          "groups": [
+            {
+              "group": 0,
+              "n": 264,
+              "events": 188,
+              "rate": 0.7121212121212122,
+              "difference_pp": 8.57625164690382,
+              "risk_ratio": 1.1369223690264905,
+              "ci95_pp": [
+                2.2632575757575695,
+                14.975193511198947
+              ]
+            },
+            {
+              "group": 1,
+              "n": 251,
+              "events": 167,
+              "rate": 0.6653386454183267,
+              "difference_pp": 2.181394581886076,
+              "risk_ratio": 1.0338976046023376,
+              "ci95_pp": [
+                -4.602205330879415,
+                9.098505843116188
+              ]
+            },
+            {
+              "group": 2,
+              "n": 198,
+              "events": 113,
+              "rate": 0.5707070707070707,
+              "difference_pp": -9.76221063502859,
+              "risk_ratio": 0.8539311020654304,
+              "ci95_pp": [
+                -17.575064863094784,
+                -1.4381659487644511
+              ]
+            },
+            {
+              "group": 3,
+              "n": 287,
+              "events": 181,
+              "rate": 0.6306620209059234,
+              "difference_pp": -2.571946577009343,
+              "risk_ratio": 0.9608162839870158,
+              "ci95_pp": [
+                -8.86719265409444,
+                4.341961872834521
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.2278018852514532,
+            "candidate": 0.2258712147983186,
+            "gain": 0.0019306704531345642,
+            "adjusted_ci": [
+              -0.0017528948384308324,
+              0.005767454477942435
+            ],
+            "passes": false
+          }
+        },
+        "C1": {
+          "cramers_v": 0.006471230045881094,
+          "groups": [
+            {
+              "group": 0,
+              "n": 162,
+              "events": 104,
+              "rate": 0.6419753086419753,
+              "difference_pp": -0.838268658475505,
+              "risk_ratio": 0.9871106580586703,
+              "ci95_pp": [
+                -8.86336515513126,
+                7.129371814137126
+              ]
+            },
+            {
+              "group": 1,
+              "n": 838,
+              "events": 545,
+              "rate": 0.6503579952267303,
+              "difference_pp": 0.838268658475505,
+              "risk_ratio": 1.0130576464108685,
+              "ci95_pp": [
+                -7.104437372933796,
+                8.983212528359692
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.22747445366862848,
+            "candidate": 0.22791508313424103,
+            "gain": -0.0004406294656125404,
+            "adjusted_ci": [
+              -0.0025207635706095185,
+              0.0014368376611189422
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 162,
+                "overlap": 36,
+                "model_events": 104,
+                "rule_events": 110,
+                "difference_pp": -3.703703703703709,
+                "ci95_pp": [
+                  -12.370142774012997,
+                  5.606957778986436
+                ]
+              },
+              "highest_value": {
+                "n_each": 162,
+                "overlap": 5,
+                "model_events": 104,
+                "rule_events": 97,
+                "difference_pp": 4.320987654320985,
+                "ci95_pp": [
+                  -6.220160850073087,
+                  15.178901538831644
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 162,
+                "overlap": 162,
+                "model_events": 104,
+                "rule_events": 104,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_usage": {
+                "n_each": 162,
+                "overlap": 0,
+                "model_events": 104,
+                "rule_events": 102,
+                "difference_pp": 1.2345679012345623,
+                "ci95_pp": [
+                  -9.3747360234702,
+                  12.07607067192005
+                ]
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 838,
+                "overlap": 681,
+                "model_events": 545,
+                "rule_events": 552,
+                "difference_pp": -0.835322195704058,
+                "ci95_pp": [
+                  -2.750656256602211,
+                  1.0742064342614968
+                ]
+              },
+              "highest_value": {
+                "n_each": 838,
+                "overlap": 712,
+                "model_events": 545,
+                "rule_events": 539,
+                "difference_pp": 0.7159904534606243,
+                "ci95_pp": [
+                  -1.0290275918113423,
+                  2.4365143961671296
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            }
+          }
+        },
+        "C3": {
+          "cramers_v": 0.03561828583201947,
+          "groups": [
+            {
+              "group": 0,
+              "n": 900,
+              "events": 579,
+              "rate": 0.6433333333333333,
+              "difference_pp": -5.666666666666664,
+              "risk_ratio": 0.9190476190476191,
+              "ci95_pp": [
+                -15.000000000000002,
+                4.336111111111096
+              ]
+            },
+            {
+              "group": 1,
+              "n": 100,
+              "events": 70,
+              "rate": 0.7,
+              "difference_pp": 5.666666666666664,
+              "risk_ratio": 1.088082901554404,
+              "ci95_pp": [
+                -3.8916666666666746,
+                15.333333333333332
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.22747445366862848,
+            "candidate": 0.22747445366862848,
+            "gain": 0.0,
+            "adjusted_ci": [
+              0.0,
+              0.0
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 900,
+                "overlap": 800,
+                "model_events": 579,
+                "rule_events": 595,
+                "difference_pp": -1.7777777777777781,
+                "ci95_pp": [
+                  -3.1901806193683186,
+                  -0.36857469661321923
+                ]
+              },
+              "highest_value": {
+                "n_each": 900,
+                "overlap": 900,
+                "model_events": 579,
+                "rule_events": 579,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 100,
+                "overlap": 100,
+                "model_events": 70,
+                "rule_events": 70,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_value": {
+                "n_each": 100,
+                "overlap": 0,
+                "model_events": 70,
+                "rule_events": 54,
+                "difference_pp": 15.999999999999993,
+                "ci95_pp": [
+                  3.5254426146467885,
+                  29.18319881438693
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 100,
+                "overlap": 14,
+                "model_events": 70,
+                "rule_events": 64,
+                "difference_pp": 5.999999999999995,
+                "ci95_pp": [
+                  -5.580596480785767,
+                  18.10519819095574
+                ]
+              },
+              "highest_usage": {
+                "n_each": 100,
+                "overlap": 2,
+                "model_events": 70,
+                "rule_events": 64,
+                "difference_pp": 5.999999999999995,
+                "ci95_pp": [
+                  -6.86528286427846,
+                  18.788041631265926
+                ]
+              }
+            }
+          }
+        },
+        "C4": {
+          "cramers_v": 0.004170395690446409,
+          "groups": [
+            {
+              "group": 0,
+              "n": 885,
+              "events": 575,
+              "rate": 0.6497175141242938,
+              "difference_pp": 0.6239253254728627,
+              "risk_ratio": 1.009696136814781,
+              "ci95_pp": [
+                -8.95173176123803,
+                9.581061164333088
+              ]
+            },
+            {
+              "group": 1,
+              "n": 115,
+              "events": 74,
+              "rate": 0.6434782608695652,
+              "difference_pp": -0.6239253254728627,
+              "risk_ratio": 0.9903969754253307,
+              "ci95_pp": [
+                -9.818103660034385,
+                8.490420044215169
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.22747445366862848,
+            "candidate": 0.22771593689683886,
+            "gain": -0.00024148322821036512,
+            "adjusted_ci": [
+              -0.0007344932446275376,
+              0.00024226892097033886
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 885,
+                "overlap": 822,
+                "model_events": 575,
+                "rule_events": 584,
+                "difference_pp": -1.016949152542368,
+                "ci95_pp": [
+                  -2.2513818514992168,
+                  0.269437379491247
+                ]
+              },
+              "highest_value": {
+                "n_each": 885,
+                "overlap": 772,
+                "model_events": 575,
+                "rule_events": 569,
+                "difference_pp": 0.6779661016949157,
+                "ci95_pp": [
+                  -0.8615229432290974,
+                  2.192207298617169
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 115,
+                "overlap": 2,
+                "model_events": 74,
+                "rule_events": 80,
+                "difference_pp": -5.21739130434783,
+                "ci95_pp": [
+                  -17.061878166484927,
+                  6.600047763139001
+                ]
+              },
+              "highest_value": {
+                "n_each": 115,
+                "overlap": 52,
+                "model_events": 74,
+                "rule_events": 65,
+                "difference_pp": 7.826086956521738,
+                "ci95_pp": [
+                  -1.4627862619940046,
+                  17.685145278450364
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 115,
+                "overlap": 0,
+                "model_events": 74,
+                "rule_events": 72,
+                "difference_pp": 1.7391304347825987,
+                "ci95_pp": [
+                  -10.215120749243555,
+                  15.088600777565878
+                ]
+              },
+              "highest_usage": {
+                "n_each": 115,
+                "overlap": 114,
+                "model_events": 74,
+                "rule_events": 74,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  -0.869697894415622,
+                  0.8770406464155744
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "adotou_produto_90d": {
+      "events": 198,
+      "methods": {
+        "zero": {
+          "cramers_v": 0.013460547957548983,
+          "groups": [
+            {
+              "group": 0,
+              "n": 901,
+              "events": 180,
+              "rate": 0.1997780244173141,
+              "difference_pp": 1.7959842599132276,
+              "risk_ratio": 1.0987791342952276,
+              "ci95_pp": [
+                -6.2736129328804155,
+                9.643605870020966
+              ]
+            },
+            {
+              "group": 1,
+              "n": 99,
+              "events": 18,
+              "rate": 0.18181818181818182,
+              "difference_pp": -1.7959842599132276,
+              "risk_ratio": 0.9101010101010101,
+              "ci95_pp": [
+                -9.299431607977668,
+                6.484657899752238
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.15877206042688874,
+            "gain": 2.588061717085265e-05,
+            "adjusted_ci": [
+              -0.0002270402489263038,
+              0.0002648645901308395
+            ],
+            "passes": false
+          }
+        },
+        "low_use": {
+          "cramers_v": 0.011544115460735898,
+          "groups": [
+            {
+              "group": 0,
+              "n": 871,
+              "events": 174,
+              "rate": 0.1997703788748565,
+              "difference_pp": 1.3723867246949517,
+              "risk_ratio": 1.0737657864523538,
+              "ci95_pp": [
+                -5.948789149066832,
+                8.063105759218212
+              ]
+            },
+            {
+              "group": 1,
+              "n": 129,
+              "events": 24,
+              "rate": 0.18604651162790697,
+              "difference_pp": -1.3723867246949517,
+              "risk_ratio": 0.9313017909649826,
+              "ci95_pp": [
+                -8.579464039373793,
+                5.978715545706166
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.15890263739581664,
+            "gain": -0.00010469635175706251,
+            "adjusted_ci": [
+              -0.0005839235031605968,
+              0.0004122183532871194
+            ],
+            "passes": false
+          }
+        },
+        "high_use": {
+          "cramers_v": 0.05915035882786762,
+          "groups": [
+            {
+              "group": 0,
+              "n": 921,
+              "events": 176,
+              "rate": 0.19109663409337677,
+              "difference_pp": -8.738437856485106,
+              "risk_ratio": 0.6862106406080348,
+              "ci95_pp": [
+                -18.940096757789416,
+                1.1709891559807035
+              ]
+            },
+            {
+              "group": 1,
+              "n": 79,
+              "events": 22,
+              "rate": 0.27848101265822783,
+              "difference_pp": 8.738437856485106,
+              "risk_ratio": 1.4572784810126582,
+              "ci95_pp": [
+                -1.3537844115504627,
+                19.191612034250056
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.158696212580789,
+            "gain": 0.00010172846327058503,
+            "adjusted_ci": [
+              -9.910514685322418e-05,
+              0.0003302336168225943
+            ],
+            "passes": false
+          }
+        },
+        "coverage": {
+          "cramers_v": 0.017496366319173114,
+          "groups": [
+            {
+              "group": 0,
+              "n": 462,
+              "events": 88,
+              "rate": 0.19047619047619047,
+              "difference_pp": -1.3984776066560456,
+              "risk_ratio": 0.9316017316017315,
+              "ci95_pp": [
+                -6.35567035195288,
+                3.674021146140105
+              ]
+            },
+            {
+              "group": 1,
+              "n": 538,
+              "events": 110,
+              "rate": 0.20446096654275092,
+              "difference_pp": 1.3984776066560456,
+              "risk_ratio": 1.0734200743494424,
+              "ci95_pp": [
+                -3.5517750527044214,
+                6.130751219041176
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.15880798981022862,
+            "gain": -1.004876616901472e-05,
+            "adjusted_ci": [
+              -8.498746438348494e-05,
+              7.170267016721876e-05
+            ],
+            "passes": false
+          }
+        },
+        "value": {
+          "cramers_v": 0.055082337827117356,
+          "groups": [
+            {
+              "group": 0,
+              "n": 515,
+              "events": 91,
+              "rate": 0.1766990291262136,
+              "difference_pp": -4.391952757481732,
+              "risk_ratio": 0.8009255058524636,
+              "ci95_pp": [
+                -9.41477329596637,
+                0.5110599539585596
+              ]
+            },
+            {
+              "group": 1,
+              "n": 485,
+              "events": 107,
+              "rate": 0.22061855670103092,
+              "difference_pp": 4.391952757481732,
+              "risk_ratio": 1.2485555681431968,
+              "ci95_pp": [
+                -0.42498248423581236,
+                9.391652487238506
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.1593094806423988,
+            "gain": -0.000511539598339187,
+            "adjusted_ci": [
+              -0.0012387580362960013,
+              0.0002469007169438573
+            ],
+            "passes": false
+          }
+        },
+        "value_coverage": {
+          "cramers_v": 0.07975530543806064,
+          "groups": [
+            {
+              "group": 0,
+              "n": 264,
+              "events": 51,
+              "rate": 0.19318181818181818,
+              "difference_pp": -0.6546442687747039,
+              "risk_ratio": 0.9672232529375386,
+              "ci95_pp": [
+                -6.217576581027666,
+                4.891716073781288
+              ]
+            },
+            {
+              "group": 1,
+              "n": 251,
+              "events": 40,
+              "rate": 0.1593625498007968,
+              "difference_pp": -5.158538077330199,
+              "risk_ratio": 0.7554591759544101,
+              "ci95_pp": [
+                -10.482183415869233,
+                0.425587370145587
+              ]
+            },
+            {
+              "group": 2,
+              "n": 198,
+              "events": 37,
+              "rate": 0.18686868686868688,
+              "difference_pp": -1.3879442807123583,
+              "risk_ratio": 0.9308614091222788,
+              "ci95_pp": [
+                -7.4560757197914285,
+                4.444035114234607
+              ]
+            },
+            {
+              "group": 3,
+              "n": 287,
+              "events": 70,
+              "rate": 0.24390243902439024,
+              "difference_pp": 6.437929736941128,
+              "risk_ratio": 1.3586128048780488,
+              "ci95_pp": [
+                1.0609218544599803,
+                11.881496449707033
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15879794104405956,
+            "candidate": 0.16092042351422475,
+            "gain": -0.0021224824701651665,
+            "adjusted_ci": [
+              -0.004175783325434351,
+              -7.573980800127255e-05
+            ],
+            "passes": false
+          }
+        },
+        "C1": {
+          "cramers_v": 0.03457182592309815,
+          "groups": [
+            {
+              "group": 0,
+              "n": 162,
+              "events": 27,
+              "rate": 0.16666666666666666,
+              "difference_pp": -3.739061256961018,
+              "risk_ratio": 0.8167641325536062,
+              "ci95_pp": [
+                -9.974697250950236,
+                2.890885117416539
+              ]
+            },
+            {
+              "group": 1,
+              "n": 838,
+              "events": 171,
+              "rate": 0.20405727923627684,
+              "difference_pp": 3.739061256961018,
+              "risk_ratio": 1.224343675417661,
+              "ci95_pp": [
+                -2.5746560004714323,
+                10.068173782374261
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.16053803408356548,
+            "candidate": 0.1619126166875426,
+            "gain": -0.0013745826039770978,
+            "adjusted_ci": [
+              -0.0030736481048208534,
+              0.00028033408818490667
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 162,
+                "overlap": 36,
+                "model_events": 27,
+                "rule_events": 28,
+                "difference_pp": -0.6172839506172839,
+                "ci95_pp": [
+                  -8.186067657727685,
+                  6.6905521539747825
+                ]
+              },
+              "highest_value": {
+                "n_each": 162,
+                "overlap": 5,
+                "model_events": 27,
+                "rule_events": 37,
+                "difference_pp": -6.172839506172839,
+                "ci95_pp": [
+                  -14.229279278724919,
+                  2.3687519464341324
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 162,
+                "overlap": 162,
+                "model_events": 27,
+                "rule_events": 27,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_usage": {
+                "n_each": 162,
+                "overlap": 0,
+                "model_events": 27,
+                "rule_events": 42,
+                "difference_pp": -9.25925925925926,
+                "ci95_pp": [
+                  -18.513799080867535,
+                  -0.7068264648163741
+                ]
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 838,
+                "overlap": 681,
+                "model_events": 171,
+                "rule_events": 161,
+                "difference_pp": 1.1933174224343674,
+                "ci95_pp": [
+                  -0.4023161103894263,
+                  2.8760797027369094
+                ]
+              },
+              "highest_value": {
+                "n_each": 838,
+                "overlap": 712,
+                "model_events": 171,
+                "rule_events": 170,
+                "difference_pp": 0.11933174224343646,
+                "ci95_pp": [
+                  -1.2446306931653994,
+                  1.5467340862131882
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            }
+          }
+        },
+        "C3": {
+          "cramers_v": 0.015056758029762259,
+          "groups": [
+            {
+              "group": 0,
+              "n": 900,
+              "events": 180,
+              "rate": 0.2,
+              "difference_pp": 2.0000000000000018,
+              "risk_ratio": 1.1111111111111112,
+              "ci95_pp": [
+                -6.0,
+                9.777777777777777
+              ]
+            },
+            {
+              "group": 1,
+              "n": 100,
+              "events": 18,
+              "rate": 0.18,
+              "difference_pp": -2.0000000000000018,
+              "risk_ratio": 0.8999999999999999,
+              "ci95_pp": [
+                -9.444444444444445,
+                6.222222222222223
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.16053803408356548,
+            "candidate": 0.16053803408356548,
+            "gain": 0.0,
+            "adjusted_ci": [
+              0.0,
+              0.0
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 900,
+                "overlap": 800,
+                "model_events": 180,
+                "rule_events": 178,
+                "difference_pp": 0.22222222222222365,
+                "ci95_pp": [
+                  -0.9945516043112643,
+                  1.438187645753826
+                ]
+              },
+              "highest_value": {
+                "n_each": 900,
+                "overlap": 900,
+                "model_events": 180,
+                "rule_events": 180,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 100,
+                "overlap": 100,
+                "model_events": 18,
+                "rule_events": 18,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_value": {
+                "n_each": 100,
+                "overlap": 0,
+                "model_events": 18,
+                "rule_events": 20,
+                "difference_pp": -2.0000000000000018,
+                "ci95_pp": [
+                  -12.408981726238366,
+                  9.117086350669272
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 100,
+                "overlap": 14,
+                "model_events": 18,
+                "rule_events": 16,
+                "difference_pp": 1.9999999999999991,
+                "ci95_pp": [
+                  -7.802908736137589,
+                  11.93967503693931
+                ]
+              },
+              "highest_usage": {
+                "n_each": 100,
+                "overlap": 2,
+                "model_events": 18,
+                "rule_events": 28,
+                "difference_pp": -10.000000000000004,
+                "ci95_pp": [
+                  -21.16303687146838,
+                  1.2667797958508944
+                ]
+              }
+            }
+          }
+        },
+        "C4": {
+          "cramers_v": 0.06473803311143739,
+          "groups": [
+            {
+              "group": 0,
+              "n": 885,
+              "events": 167,
+              "rate": 0.18870056497175142,
+              "difference_pp": -8.086465241955294,
+              "risk_ratio": 0.7000182248952068,
+              "ci95_pp": [
+                -16.252394988946204,
+                0.15720953082780653
+              ]
+            },
+            {
+              "group": 1,
+              "n": 115,
+              "events": 31,
+              "rate": 0.26956521739130435,
+              "difference_pp": 8.086465241955294,
+              "risk_ratio": 1.428534235876074,
+              "ci95_pp": [
+                -0.11299435028248594,
+                16.548513878653882
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.16053803408356548,
+            "candidate": 0.16043515304760747,
+            "gain": 0.00010288103595802845,
+            "adjusted_ci": [
+              -0.001713860729327534,
+              0.002122407433055946
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 885,
+                "overlap": 822,
+                "model_events": 167,
+                "rule_events": 174,
+                "difference_pp": -0.7909604519774016,
+                "ci95_pp": [
+                  -1.754686326727408,
+                  0.16051346816559603
+                ]
+              },
+              "highest_value": {
+                "n_each": 885,
+                "overlap": 772,
+                "model_events": 167,
+                "rule_events": 178,
+                "difference_pp": -1.2429378531073454,
+                "ci95_pp": [
+                  -2.5563253138369455,
+                  0.1600910303010632
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 115,
+                "overlap": 2,
+                "model_events": 31,
+                "rule_events": 20,
+                "difference_pp": 9.565217391304348,
+                "ci95_pp": [
+                  -0.8316099661208363,
+                  19.724963918494225
+                ]
+              },
+              "highest_value": {
+                "n_each": 115,
+                "overlap": 52,
+                "model_events": 31,
+                "rule_events": 24,
+                "difference_pp": 6.086956521739132,
+                "ci95_pp": [
+                  -1.7374193476781017,
+                  13.134116081314353
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 115,
+                "overlap": 0,
+                "model_events": 31,
+                "rule_events": 21,
+                "difference_pp": 8.695652173913043,
+                "ci95_pp": [
+                  -1.6414136666569954,
+                  19.586100055534985
+                ]
+              },
+              "highest_usage": {
+                "n_each": 115,
+                "overlap": 114,
+                "model_events": 31,
+                "rule_events": 31,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  -0.6799172642281176,
+                  0.6910569105691045
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "queda_uso_90d": {
+      "events": 188,
+      "methods": {
+        "zero": {
+          "cramers_v": 0.04809287392251727,
+          "groups": [
+            {
+              "group": 0,
+              "n": 901,
+              "events": 175,
+              "rate": 0.19422863485016648,
+              "difference_pp": 6.291550353703515,
+              "risk_ratio": 1.4791257577051138,
+              "ci95_pp": [
+                -1.201246650747207,
+                13.117860065695803
+              ]
+            },
+            {
+              "group": 1,
+              "n": 99,
+              "events": 13,
+              "rate": 0.13131313131313133,
+              "difference_pp": -6.291550353703515,
+              "risk_ratio": 0.6760750360750362,
+              "ci95_pp": [
+                -13.143056536508258,
+                1.1011894752183287
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15280358368889999,
+            "gain": 0.00027606938021132736,
+            "adjusted_ci": [
+              -0.0013463715956369337,
+              0.0016629410850768306
+            ],
+            "passes": false
+          }
+        },
+        "low_use": {
+          "cramers_v": 0.10882155859074595,
+          "groups": [
+            {
+              "group": 0,
+              "n": 871,
+              "events": 178,
+              "rate": 0.20436280137772675,
+              "difference_pp": 12.684342153276551,
+              "risk_ratio": 2.6362801377726752,
+              "ci95_pp": [
+                7.344315987148336,
+                17.793879440009256
+              ]
+            },
+            {
+              "group": 1,
+              "n": 129,
+              "events": 10,
+              "rate": 0.07751937984496124,
+              "difference_pp": -12.684342153276551,
+              "risk_ratio": 0.37932235867955755,
+              "ci95_pp": [
+                -17.59360620867042,
+                -7.0570003293016175
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15155681400557058,
+            "gain": 0.0015228390635407389,
+            "adjusted_ci": [
+              -0.00042593136078495643,
+              0.0033082506479907856
+            ],
+            "passes": false
+          }
+        },
+        "high_use": {
+          "cramers_v": 0.05833558519094416,
+          "groups": [
+            {
+              "group": 0,
+              "n": 921,
+              "events": 167,
+              "rate": 0.18132464712269272,
+              "difference_pp": -8.449813768743383,
+              "risk_ratio": 0.6821260534615584,
+              "ci95_pp": [
+                -19.0107065792548,
+                1.748306051485038
+              ]
+            },
+            {
+              "group": 1,
+              "n": 79,
+              "events": 21,
+              "rate": 0.26582278481012656,
+              "difference_pp": 8.449813768743383,
+              "risk_ratio": 1.4660046994618356,
+              "ci95_pp": [
+                -1.3537500515400163,
+                18.580038208331597
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15290111271190487,
+            "gain": 0.00017854035720639937,
+            "adjusted_ci": [
+              -0.003243061232803232,
+              0.003801446875696048
+            ],
+            "passes": false
+          }
+        },
+        "coverage": {
+          "cramers_v": 0.02640778010760308,
+          "groups": [
+            {
+              "group": 0,
+              "n": 462,
+              "events": 92,
+              "rate": 0.19913419913419914,
+              "difference_pp": 2.069553742416197,
+              "risk_ratio": 1.115981240981241,
+              "ci95_pp": [
+                -2.759036193051064,
+                6.84169764560099
+              ]
+            },
+            {
+              "group": 1,
+              "n": 538,
+              "events": 96,
+              "rate": 0.17843866171003717,
+              "difference_pp": -2.069553742416197,
+              "risk_ratio": 0.8960724098917083,
+              "ci95_pp": [
+                -6.958592832198781,
+                2.853240316065592
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15362021846449478,
+            "gain": -0.0005405653953834643,
+            "adjusted_ci": [
+              -0.0017945260820924078,
+              0.0007326344471178453
+            ],
+            "passes": false
+          }
+        },
+        "value": {
+          "cramers_v": 0.1424707473901784,
+          "groups": [
+            {
+              "group": 0,
+              "n": 515,
+              "events": 69,
+              "rate": 0.13398058252427184,
+              "difference_pp": -11.13802422179962,
+              "risk_ratio": 0.5460553153300155,
+              "ci95_pp": [
+                -16.00240216194575,
+                -6.443799419477528
+              ]
+            },
+            {
+              "group": 1,
+              "n": 485,
+              "events": 119,
+              "rate": 0.24536082474226803,
+              "difference_pp": 11.13802422179962,
+              "risk_ratio": 1.8313163006125803,
+              "ci95_pp": [
+                6.3694324892403165,
+                16.208887999199277
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15137772248654377,
+            "gain": 0.0017019305825675323,
+            "adjusted_ci": [
+              0.0002649142024446306,
+              0.003048311989064644
+            ],
+            "passes": false
+          }
+        },
+        "value_coverage": {
+          "cramers_v": 0.14846638335982287,
+          "groups": [
+            {
+              "group": 0,
+              "n": 264,
+              "events": 40,
+              "rate": 0.15151515151515152,
+              "difference_pp": -4.957180500658762,
+              "risk_ratio": 0.7534807534807535,
+              "ci95_pp": [
+                -10.005455368906455,
+                0.3460556653491432
+              ]
+            },
+            {
+              "group": 1,
+              "n": 251,
+              "events": 29,
+              "rate": 0.11553784860557768,
+              "difference_pp": -9.67451954531673,
+              "risk_ratio": 0.5442631987772182,
+              "ci95_pp": [
+                -14.733110282501501,
+                -4.483600976600956
+              ]
+            },
+            {
+              "group": 2,
+              "n": 198,
+              "events": 52,
+              "rate": 0.26262626262626265,
+              "difference_pp": 9.305020277588858,
+              "risk_ratio": 1.5487225193107546,
+              "ci95_pp": [
+                2.2656427114033124,
+                16.107930930250127
+              ]
+            },
+            {
+              "group": 3,
+              "n": 287,
+              "events": 67,
+              "rate": 0.23344947735191637,
+              "difference_pp": 6.374400750619408,
+              "risk_ratio": 1.375615515305094,
+              "ci95_pp": [
+                0.9265458312767871,
+                11.885894610298536
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15307965306911128,
+            "candidate": 0.15204597227440575,
+            "gain": 0.0010336807947055344,
+            "adjusted_ci": [
+              -0.0009327851741559657,
+              0.002772878671132699
+            ],
+            "passes": false
+          }
+        },
+        "C1": {
+          "cramers_v": 0.10736448697499784,
+          "groups": [
+            {
+              "group": 0,
+              "n": 162,
+              "events": 15,
+              "rate": 0.09259259259259259,
+              "difference_pp": -11.3851321488553,
+              "risk_ratio": 0.44851209591093977,
+              "ci95_pp": [
+                -16.422110256636905,
+                -5.870827072099946
+              ]
+            },
+            {
+              "group": 1,
+              "n": 838,
+              "events": 173,
+              "rate": 0.2064439140811456,
+              "difference_pp": 11.3851321488553,
+              "risk_ratio": 2.2295942720763726,
+              "ci95_pp": [
+                5.7304649518253346,
+                16.635839299920445
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15312585893041636,
+            "candidate": 0.1533825438206722,
+            "gain": -0.00025668489025581045,
+            "adjusted_ci": [
+              -0.0009936639616308703,
+              0.0005991914748414341
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 162,
+                "overlap": 36,
+                "model_events": 15,
+                "rule_events": 23,
+                "difference_pp": -4.938271604938271,
+                "ci95_pp": [
+                  -11.8132947589297,
+                  1.809357278497473
+                ]
+              },
+              "highest_value": {
+                "n_each": 162,
+                "overlap": 5,
+                "model_events": 15,
+                "rule_events": 48,
+                "difference_pp": -20.37037037037037,
+                "ci95_pp": [
+                  -29.10815890722183,
+                  -12.115365719569397
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 162,
+                "overlap": 162,
+                "model_events": 15,
+                "rule_events": 15,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_usage": {
+                "n_each": 162,
+                "overlap": 0,
+                "model_events": 15,
+                "rule_events": 43,
+                "difference_pp": -17.283950617283953,
+                "ci95_pp": [
+                  -25.510407188353046,
+                  -8.89778870340353
+                ]
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 838,
+                "overlap": 681,
+                "model_events": 173,
+                "rule_events": 140,
+                "difference_pp": 3.937947494033414,
+                "ci95_pp": [
+                  2.333847545942361,
+                  5.635938757299806
+                ]
+              },
+              "highest_value": {
+                "n_each": 838,
+                "overlap": 712,
+                "model_events": 173,
+                "rule_events": 165,
+                "difference_pp": 0.9546539379474944,
+                "ci95_pp": [
+                  -0.349951343893925,
+                  2.278406691921628
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            }
+          }
+        },
+        "C3": {
+          "cramers_v": 0.049482291068100245,
+          "groups": [
+            {
+              "group": 0,
+              "n": 900,
+              "events": 175,
+              "rate": 0.19444444444444445,
+              "difference_pp": 6.444444444444445,
+              "risk_ratio": 1.4957264957264957,
+              "ci95_pp": [
+                -0.9999999999999981,
+                13.222222222222221
+              ]
+            },
+            {
+              "group": 1,
+              "n": 100,
+              "events": 13,
+              "rate": 0.13,
+              "difference_pp": -6.444444444444445,
+              "risk_ratio": 0.6685714285714286,
+              "ci95_pp": [
+                -13.225000000000001,
+                0.8888888888888891
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15312585893041636,
+            "candidate": 0.15312585893041636,
+            "gain": 0.0,
+            "adjusted_ci": [
+              0.0,
+              0.0
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 900,
+                "overlap": 800,
+                "model_events": 175,
+                "rule_events": 159,
+                "difference_pp": 1.7777777777777781,
+                "ci95_pp": [
+                  0.4978173997475984,
+                  3.10695601905128
+                ]
+              },
+              "highest_value": {
+                "n_each": 900,
+                "overlap": 900,
+                "model_events": 175,
+                "rule_events": 175,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 100,
+                "overlap": 100,
+                "model_events": 13,
+                "rule_events": 13,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "highest_value": {
+                "n_each": 100,
+                "overlap": 0,
+                "model_events": 13,
+                "rule_events": 29,
+                "difference_pp": -15.999999999999998,
+                "ci95_pp": [
+                  -26.82655334861217,
+                  -5.325563280408297
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 100,
+                "overlap": 14,
+                "model_events": 13,
+                "rule_events": 7,
+                "difference_pp": 6.0,
+                "ci95_pp": [
+                  -2.3029169071018005,
+                  14.001609242650737
+                ]
+              },
+              "highest_usage": {
+                "n_each": 100,
+                "overlap": 2,
+                "model_events": 13,
+                "rule_events": 29,
+                "difference_pp": -15.999999999999998,
+                "ci95_pp": [
+                  -27.072957793992703,
+                  -4.689424102381799
+                ]
+              }
+            }
+          }
+        },
+        "C4": {
+          "cramers_v": 0.091298736497099,
+          "groups": [
+            {
+              "group": 0,
+              "n": 885,
+              "events": 155,
+              "rate": 0.1751412429378531,
+              "difference_pp": -11.181527880127733,
+              "risk_ratio": 0.6103406950864577,
+              "ci95_pp": [
+                -19.946818963399654,
+                -2.9474330631294525
+              ]
+            },
+            {
+              "group": 1,
+              "n": 115,
+              "events": 33,
+              "rate": 0.28695652173913044,
+              "difference_pp": 11.181527880127733,
+              "risk_ratio": 1.6384291725105191,
+              "ci95_pp": [
+                2.519651191353477,
+                20.13866371898796
+              ]
+            }
+          ],
+          "brier": {
+            "baseline": 0.15312585893041636,
+            "candidate": 0.15285719344338478,
+            "gain": 0.0002686654870316082,
+            "adjusted_ci": [
+              -0.0026743806287728342,
+              0.0031489148002678186
+            ],
+            "passes": false
+          },
+          "size_matched": {
+            "0": {
+              "lowest_value": {
+                "n_each": 885,
+                "overlap": 822,
+                "model_events": 155,
+                "rule_events": 154,
+                "difference_pp": 0.11299435028248594,
+                "ci95_pp": [
+                  -1.0184205637836923,
+                  1.2294062934425278
+                ]
+              },
+              "highest_value": {
+                "n_each": 885,
+                "overlap": 772,
+                "model_events": 155,
+                "rule_events": 173,
+                "difference_pp": -2.033898305084747,
+                "ci95_pp": [
+                  -3.3796314964440923,
+                  -0.7146041830394687
+                ]
+              },
+              "lowest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              },
+              "highest_usage": {
+                "status": "insufficient_observed_clients",
+                "available": 538
+              }
+            },
+            "1": {
+              "lowest_value": {
+                "n_each": 115,
+                "overlap": 2,
+                "model_events": 33,
+                "rule_events": 15,
+                "difference_pp": 15.65217391304348,
+                "ci95_pp": [
+                  5.604235676604097,
+                  25.553793369002232
+                ]
+              },
+              "highest_value": {
+                "n_each": 115,
+                "overlap": 52,
+                "model_events": 33,
+                "rule_events": 34,
+                "difference_pp": -0.8695652173913049,
+                "ci95_pp": [
+                  -9.333477011494253,
+                  7.710743488011032
+                ]
+              },
+              "lowest_usage": {
+                "n_each": 115,
+                "overlap": 0,
+                "model_events": 33,
+                "rule_events": 9,
+                "difference_pp": 20.869565217391305,
+                "ci95_pp": [
+                  11.778816588909569,
+                  30.374143853848885
+                ]
+              },
+              "highest_usage": {
+                "n_each": 115,
+                "overlap": 114,
+                "model_events": 33,
+                "rule_events": 33,
+                "difference_pp": 0.0,
+                "ci95_pp": [
+                  -1.8767777839917719,
+                  1.8167897407474702
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

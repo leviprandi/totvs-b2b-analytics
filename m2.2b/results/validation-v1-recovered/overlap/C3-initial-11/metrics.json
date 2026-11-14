@@ -1,0 +1,223 @@
+{
+  "family": "kmeans",
+  "k": 2,
+  "seed": 11,
+  "parameters": {
+    "init": "k-means++",
+    "n_init": 10,
+    "max_iter": 300,
+    "tol": 0.0001,
+    "random_state": 11,
+    "n_clusters": 2
+  },
+  "fit_seconds": 0.0035285420017316937,
+  "iterations": 3,
+  "converged": true,
+  "silhouette": 0.46218845925205837,
+  "min_reference_cluster": 110,
+  "clusters": [
+    {
+      "cluster": 0,
+      "train_count": 2689,
+      "reference_count": 890,
+      "silhouette": 0.4509385879569268
+    },
+    {
+      "cluster": 1,
+      "train_count": 311,
+      "reference_count": 110,
+      "silhouette": 0.553210145185396
+    }
+  ],
+  "inertia_train": 10468.833245830829,
+  "centers": [
+    [
+      0.08078191698174264,
+      0.16533623580669532,
+      -0.027853444018797732,
+      -0.2268657067451499,
+      0.3584282231548891,
+      0.3094087021197466
+    ],
+    [
+      -2.9906520514445734,
+      -0.47198672701372196,
+      -0.5030535376174887,
+      -0.15194693918507113,
+      2.4959807073955,
+      0.7073954983922824
+    ]
+  ],
+  "status": "eligible",
+  "reasons": [],
+  "warnings": [],
+  "elapsed_seconds": 0.009597209020284936,
+  "artifact": "C3-initial-11",
+  "subsample_seed": null,
+  "preprocessing": {
+    "features_in": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "proporcao_gratuito",
+      "nps_medio",
+      "telemetria_observada",
+      "qtd_eventos_uso"
+    ],
+    "features_out": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "proporcao_gratuito",
+      "nps_medio",
+      "qtd_eventos_uso",
+      "telemetria_observada"
+    ],
+    "imputer_medians": {
+      "valor_mensal_total": 5.806970516750756,
+      "qtd_contratos": 1.0986122886681098,
+      "qtd_produtos": 1.0986122886681098,
+      "dias_relacionamento": 7.33400287297911,
+      "proporcao_gratuito": 0.0,
+      "nps_medio": 6.0,
+      "qtd_eventos_uso": 2.4849066497880004
+    },
+    "scaler_center": {
+      "valor_mensal_total": 5.806970516750756,
+      "qtd_contratos": 1.0986122886681098,
+      "qtd_produtos": 1.0986122886681098,
+      "dias_relacionamento": 7.33400287297911,
+      "proporcao_gratuito": 0.0,
+      "nps_medio": 6.0,
+      "qtd_eventos_uso": 2.4849066497880004
+    },
+    "scaler_scale": {
+      "valor_mensal_total": 1.9380109202734834,
+      "qtd_contratos": 0.6931471805599453,
+      "qtd_produtos": 0.6931471805599453,
+      "dias_relacionamento": 0.9328441643201586,
+      "proporcao_gratuito": 0.4,
+      "nps_medio": 1.0,
+      "qtd_eventos_uso": 0.08701137698962969
+    },
+    "binary_passthrough": "telemetria_observada",
+    "log1p": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "qtd_eventos_uso"
+    ],
+    "limits": {},
+    "model_features": [
+      "valor_mensal_total",
+      "qtd_contratos",
+      "qtd_produtos",
+      "dias_relacionamento",
+      "proporcao_gratuito",
+      "nps_medio"
+    ],
+    "dropped": [
+      "telemetria_observada",
+      "qtd_eventos_uso"
+    ]
+  },
+  "profiles": [
+    {
+      "cluster": 0,
+      "size": 890,
+      "outside_train_cutoffs": 0,
+      "features": {
+        "valor_mensal_total": {
+          "observed": 890,
+          "median": 393.18,
+          "mean": 855.5016067415729
+        },
+        "qtd_contratos": {
+          "observed": 890,
+          "median": 2.0,
+          "mean": 2.606741573033708
+        },
+        "qtd_produtos": {
+          "observed": 890,
+          "median": 2.0,
+          "mean": 2.0224719101123596
+        },
+        "dias_relacionamento": {
+          "observed": 890,
+          "median": 1497.5,
+          "mean": 1511.9741573033707
+        },
+        "proporcao_gratuito": {
+          "observed": 890,
+          "median": 0.0,
+          "mean": 0.14161048689138578
+        },
+        "nps_medio": {
+          "observed": 641,
+          "median": 6.0,
+          "mean": 6.43213728549142
+        },
+        "telemetria_observada": {
+          "observed": 890,
+          "median": 1.0,
+          "mean": 0.5775280898876405
+        },
+        "qtd_eventos_uso": {
+          "observed": 514,
+          "median": 11.0,
+          "mean": 11.799610894941635
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "size": 110,
+      "outside_train_cutoffs": 0,
+      "features": {
+        "valor_mensal_total": {
+          "observed": 110,
+          "median": 0.0,
+          "mean": 0.0
+        },
+        "qtd_contratos": {
+          "observed": 110,
+          "median": 1.0,
+          "mean": 1.2
+        },
+        "qtd_produtos": {
+          "observed": 110,
+          "median": 1.0,
+          "mean": 1.1272727272727272
+        },
+        "dias_relacionamento": {
+          "observed": 110,
+          "median": 1594.0,
+          "mean": 1478.7727272727273
+        },
+        "proporcao_gratuito": {
+          "observed": 110,
+          "median": 1.0,
+          "mean": 1.0
+        },
+        "nps_medio": {
+          "observed": 78,
+          "median": 7.0,
+          "mean": 6.948717948717949
+        },
+        "telemetria_observada": {
+          "observed": 110,
+          "median": 1.0,
+          "mean": 0.5818181818181818
+        },
+        "qtd_eventos_uso": {
+          "observed": 64,
+          "median": 8.0,
+          "mean": 8.765625
+        }
+      }
+    }
+  ]
+}

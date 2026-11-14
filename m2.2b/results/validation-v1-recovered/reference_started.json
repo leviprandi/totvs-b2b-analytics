@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-11-14T19:54:49.349592+00:00",
+  "hashes": {
+    "PROTOCOLO.md": "a398a8fc59d5c4c6689e89a0db2103d32ffa5ef5a4f9df080805dcf070e3fefc",
+    "validation.py": "1cf50873beca64d4cbdf5c4a712beb9361d7a37a856722936f249f4f8a2db4ad",
+    "snapshot.py": "50fc6eb8739ae0a1d95c2cdbd4473fd3285e0c1b87f42197ede77b00971795b2",
+    "experiment.py": "d47285cb6a50ea88a377862e20e476812566bfceef9b3e7a23830b0b0e3f107b",
+    "sensitivity.py": "b5ab8f0098758de1d42c036029b7b56363799ae17ff71b58ef8918dbdbeec24a",
+    "controls.py": "1071d235b3d1542ab988de81937549f639f3ef0e831650169b7135c3f8cfc702",
+    "requirements.txt": "3904c8b4e9ff3640f97e77b38185eea93065e03fff7966a573a830d572fb1c4a"
+  }
+}

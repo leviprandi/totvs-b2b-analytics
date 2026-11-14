@@ -1,0 +1,26 @@
+# Local environments, caches and editor files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.log
+*.pending/
+*.tmp
+
+# Local settings and outputs
+.env
+.env.*
+!.env.example
+runs-local/
+saida_m0/
+
+# Private copies and omitted datasets
+totvs2_handoff/
+m2.2b/results/validation-v1/
+**/futuro_reservado.csv.gz
+**/verdade_simulada_reservada.csv.gz
+**/overlap_100k_stress/*.csv.gz
