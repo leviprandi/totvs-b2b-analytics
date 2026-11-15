@@ -10,6 +10,19 @@ A TOTVS propôs à FIAP um desafio acadêmico de Data Science sobre segmentaçã
 
 [Relatório técnico — edição pública (PDF)](docs/reports/challenge_totvs_2_relatorio_tecnico_publico.pdf) · [Decisão registrada](m2.2b/results/validation-v1-recovered/confirmation.json)
 
+## Resultados em destaque
+
+![ARI mediano, percentil 10 e resultado do critério amostral para C1, C3 e C4 nos três cenários sintéticos](docs/images/estabilidade-por-cenario.png)
+
+![Melhores ganhos pontuais de Brier por cenário para modelos e regras, com intervalos ajustados e limiar de promoção](docs/images/ganho-brier-na-referencia.png)
+
+- **C1 e C4 passaram em `distinct` e `overlap`.** C3 perdeu estabilidade em `overlap`. Em `continuum`, C3 e C4 dividiram de forma estável uma população gerada sem grupos discretos.
+- **A estabilidade não se traduziu em ganho incremental suficiente.** Acrescentar o rótulo de cluster ao conjunto de regras gerou, no máximo, ganho de Brier de **0,000350** nos cenários usados para seleção.
+- **As regras simples foram comparadores competitivos.** Em `overlap`, a regra de uso alto teve ganho pontual de **0,001468** frente à taxa global. Seu intervalo ajustado inclui zero. O gráfico indica o comparador usado por cada família.
+- **Decisão `no_method`.** A promoção exigia ganho ≥ **0,002** e limite inferior ajustado acima de zero para o mesmo desfecho em `distinct` e `overlap`. Nenhum método atendeu ao critério.
+
+Fontes dos gráficos: [manifesto dos ajustes](m2.2b/results/validation-v1-recovered/fit_manifest.json) e relatórios de referência [distinct](m2.2b/results/validation-v1-recovered/distinct-reference.json), [overlap](m2.2b/results/validation-v1-recovered/overlap-reference.json) e [continuum](m2.2b/results/validation-v1-recovered/continuum-reference.json).
+
 ## Dados e desenho experimental
 
 `distinct_5k`, `overlap_5k` e `continuum_5k` têm 5.000 clientes sintéticos cada. Cada cenário usa uma divisão determinística de **3.000 para treino, 1.000 para referência e 1.000 para teste reservado**, por cliente. A chave do snapshot é `(dataset_id, cliente_id, data_corte)`. A base de 100 mil clientes foi usada separadamente para validar ingestão e integridade. [Contrato de dados](m0/CONTRATO_DADOS.md) · [Validação de volume](m0/VALIDACAO_LOCAL.md)
@@ -69,4 +82,4 @@ LOKY_MAX_CPU_COUNT=2 "$REPRO_DIR/venv/bin/python" -B m2.2b/validation.py fit \
 
 A fase `fit` é um ajuste novo com atributos observados nos três cenários e avaliação estrutural na referência. Ela não abre a reserva nem reproduz a seleção histórica com desfechos. Os exemplos usam os fixtures observados incluídos e um endereço novo para a saída. O ambiente histórico foi Python 3.12.14 em macOS ARM64. A reprodução em outras plataformas depende da disponibilidade das dependências e não implica igualdade byte a byte dos arquivos regenerados.
 
-A suíte integral histórica depende de dados reservados e de volume mantidos no acervo. **Não rode `validation.py confirm` nesta cópia.** A reserva foi consumida para este protocolo. Consulte as [instruções da etapa final](m2.2b/README.md) e o [inventário de arquivos](docs/ARQUIVOS_SHA256.txt).
+A suíte integral histórica depende de dados reservados e de volume mantidos no acervo. **Não rode `validation.py confirm` nesta cópia.** A reserva foi consumida para este protocolo. Consulte as [instruções da etapa final](m2.2b/README.md) e o [inventário de arquivos da edição pública inicial](docs/ARQUIVOS_SHA256.txt).
