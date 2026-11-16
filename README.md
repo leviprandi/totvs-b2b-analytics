@@ -1,6 +1,6 @@
 # Challenge TOTVS 2.0 — Segmentação B2B com dados sintéticos
 
-## Origem acadêmica e extensão independente
+## Origem acadêmica
 
 A TOTVS propôs à FIAP um desafio acadêmico de Data Science sobre segmentação de clientes B2B. Representantes da TOTVS avaliaram as entregas acadêmicas. O trabalho foi desenvolvido em equipe. Minha contribuição se concentrou na preparação de dados, no treinamento e na geração de resultados de clusterização, além da coordenação da equipe.
 
